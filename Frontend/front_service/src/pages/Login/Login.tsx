@@ -21,7 +21,7 @@ export default function Login() {
           </form>
         </div>
         <div className='switch-auth'>
-          <p>¿No tienes cuenta?</p><Anchor to={'#'}>Registrate</Anchor>
+          <p>¿No tienes cuenta?</p><Anchor to={'#'}>Registrate</Anchor> {/* el anchor tiene que cambiar el estado en redux para pasar a registro */}
         </div>
       </div>
     </div>

@@ -1,7 +1,3 @@
-::-webkit-scrollbar{
-    display: none;
-}
-
 .login-hero{
     display: flex;
     height: 100vh;
