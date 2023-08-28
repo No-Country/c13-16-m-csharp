@@ -1,4 +1,11 @@
-﻿namespace API_Services.DAL.Repository
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using API_Services.DAL;
+
+namespace API_Services.DAL.Repository
 {
     public interface IGenericRpository<TEntityModel>where TEntityModel:class
     {
