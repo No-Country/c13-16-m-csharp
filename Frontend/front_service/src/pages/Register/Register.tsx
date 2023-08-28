@@ -3,8 +3,17 @@ import './register.css'
 import logo from '../../images/logo.png'
 import bg from '../../images/login-bg.png'
 import { Link as Anchor } from 'react-router-dom'
+import { useDispatch } from 'react-redux/es/exports'
+import authActions from '../../store/auth/actions'
+const { authState } = authActions
 
 export default function Register() {
+  const dispatch = useDispatch()
+
+  function cambiarEstado(){
+    dispatch(authState({state: true}))
+  }
+
   return (
     <div className='register-hero'>
       <div className='register-data'>
@@ -19,7 +28,7 @@ export default function Register() {
           </form>
         </div>
         <div className='switch-auth'>
-          <p>¿Ya tienes una cuenta?</p><Anchor to={'#'}>Iniciar Sesión</Anchor> {/* el anchor tiene que cambiar el estado en redux para pasar a inicio de sesion */}
+          <p>¿Ya tienes una cuenta?</p><Anchor to={'#'} onClick={cambiarEstado}>Iniciar Sesión</Anchor> {/* el anchor tiene que cambiar el estado en redux para pasar a inicio de sesion */}
         </div>
       </div>
       <div className='background'>
