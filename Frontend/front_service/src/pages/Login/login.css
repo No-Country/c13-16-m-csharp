@@ -90,3 +90,19 @@
     color: white;
     border-radius: 5px;
 }
+
+@media (max-width: 767px){
+    .login-hero .background{
+        display: none;
+    }
+
+    .login-hero .login-data{
+        width: 100%;
+    }
+}
+
+@media (max-width:424px){
+    .login-hero .login-form input{
+        width: 250px;
+    }
+}

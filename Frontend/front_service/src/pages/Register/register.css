@@ -90,3 +90,19 @@
     color: white;
     border-radius: 5px;
 }
+
+@media (max-width: 767px){
+    .register-hero .background{
+        display: none;
+    }
+
+    .register-hero .register-data{
+        width: 100%;
+    }
+}
+
+@media (max-width:424px){
+    .register-hero .register-form input{
+        width: 250px;
+    }
+}
