@@ -1,0 +1,45 @@
+.border {
+  padding-inline: 40px;
+  padding-block: 30px;
+}
+
+.all {
+  display: flex;
+  background-color: #179CB96B;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 95px;
+  padding-inline: 80px;
+  border-radius: 10px;
+}
+
+.all div {
+  display: flex;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 22.8px;
+}
+
+.links {
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 20px;
+}
+
+.button {
+  color:#179CB96B;
+  font-size: 16px;
+  font-weight: 700;
+  padding-block: 15px;
+  padding-inline: 30px;
+  border-radius: 10px;
+  border: 0px;
+}
