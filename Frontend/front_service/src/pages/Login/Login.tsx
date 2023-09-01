@@ -14,6 +14,15 @@ export default function Login() {
     dispatch(authState({state: false}))
   }
 
+  function login(e:any){
+    e.preventDefault()
+    const data = {
+      usuario: e.target[0].value,
+      contraseña: e.target[1].value
+    }
+    console.log(data)
+  }
+
   return (
     <div className='login-hero'>
       <div className='background'>
@@ -23,9 +32,9 @@ export default function Login() {
         <img src={logo} alt='logo'></img>
         <div className='login-title'>
           <h2>Iniciar Sesión</h2>
-          <form className='login-form'>
-            <input type='text' name='usuario' placeholder='Usuario'></input>
-            <input type='password' name='contraseña' placeholder='Contraseña'></input>
+          <form className='login-form' onSubmit={login}>
+            <input type='text' name='usuario' placeholder='Usuario' required></input>
+            <input type='password' name='contraseña' placeholder='Contraseña' required></input>
             <input className='submit' type='submit' value={'Ingresar'}></input>
           </form>
         </div>
