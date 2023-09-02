@@ -1,0 +1,7 @@
+Se crearon clases en la carpeta DAL para entidades específicas, como CategoriaRepository, DatosBasicosRepository y PerfilNegocioRepository. Estas clases heredan de la interfaz IGenericRepository y proporcionarían funcionalidad para interactuar con la base de datos.
+
+Interfaces de Servicio: En la carpeta Service, se crearon interfaces como ICategoriaService, IDatosBasicoService e IPerfilNegocioService, basadas en la interfaz IGenericRepository. Luego, se implementarían clases de servicio correspondientes en la misma ubicación.
+
+Inyección de Dependencia: Deivison se encargaría de la inyección de dependencia, que es un proceso para conectar las diferentes partes del sistema.
+
+Pasos Futuros: La siguiente etapa del proyecto implicaría la creación de controladores que utilizarían los servicios implementados para manejar solicitudes web y acceder a la base de datos.
