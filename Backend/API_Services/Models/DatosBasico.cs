@@ -29,7 +29,11 @@ public partial class DatosBasico
 
     public virtual ICollection<Cliente> Clientes { get; set; } = new List<Cliente>();
 
+<<<<<<< HEAD
     public virtual PefilNegocio IdPerfilNavigation { get; set; } = null!;
+=======
+    public virtual PerfilNegocio IdPerfilNavigation { get; set; } = null!;
+>>>>>>> ce1e7770fd9080525efd70136e5209fda6c6469f
 
     public virtual Usuario? IdUsuariosNavigation { get; set; }
 

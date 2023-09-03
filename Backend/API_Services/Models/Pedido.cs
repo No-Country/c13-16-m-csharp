@@ -29,7 +29,11 @@ public partial class Pedido
 
     public virtual Monedum IdMonedaNavigation { get; set; } = null!;
 
+<<<<<<< HEAD
     public virtual PefilNegocio IdPerfilNavigation { get; set; } = null!;
+=======
+    public virtual PefillNegocio IdPerfilNavigation { get; set; } = null!;
+>>>>>>> ce1e7770fd9080525efd70136e5209fda6c6469f
 
     public virtual Proveedore IdProveedoresNavigation { get; set; } = null!;
 

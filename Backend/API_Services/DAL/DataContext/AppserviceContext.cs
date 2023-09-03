@@ -33,7 +33,11 @@ public partial class AppserviceContext : DbContext
 
     public virtual DbSet<PedidoDetalle> PedidoDetalles { get; set; }
 
+<<<<<<< HEAD
     public virtual DbSet<PefilNegocio> PefilNegocios { get; set; }
+=======
+    public virtual DbSet<PerfilNegocio> PerfilNegocios { get; set; }
+>>>>>>> ce1e7770fd9080525efd70136e5209fda6c6469f
 
     public virtual DbSet<Proveedore> Proveedores { get; set; }
 
@@ -265,14 +269,22 @@ public partial class AppserviceContext : DbContext
                 .HasConstraintName("FK_pedido_detalle_servicios");
         });
 
+<<<<<<< HEAD
         modelBuilder.Entity<PefilNegocio>(entity =>
+=======
+        modelBuilder.Entity<PerfilNegocio>(entity =>
+>>>>>>> ce1e7770fd9080525efd70136e5209fda6c6469f
         {
             entity.HasKey(e => e.IdPerfil);
 
             entity.ToTable("pefil_negocios");
 
             entity.Property(e => e.IdPerfil).HasColumnName("id_perfil");
+<<<<<<< HEAD
             entity.Property(e => e.NombrePrefil)
+=======
+            entity.Property(e => e.NombrePerfil)
+>>>>>>> ce1e7770fd9080525efd70136e5209fda6c6469f
                 .HasMaxLength(40)
                 .IsFixedLength()
                 .HasColumnName("nombre_prefil");

@@ -8,6 +8,7 @@ using API_Services.DAL.DataContext;
 using API_Services.DAL.Repository;
 using API_Services.Models;
 
+<<<<<<< HEAD
 
 
 namespace API_Services.DAL.Repository
@@ -21,6 +22,19 @@ namespace API_Services.DAL.Repository
             _dbcontext = dbcontext;
 
         }
+=======
+namespace API_Services.DAL.Repository
+{
+    public class RolRepository : IGenericRepository<Rol> // Cambio de IGenericRpository a IGenericRepository
+    {
+        private readonly AppserviceContext _dbcontext;
+
+        public RolRepository(AppserviceContext dbcontext)
+        {
+            _dbcontext = dbcontext;
+        }
+
+>>>>>>> ce1e7770fd9080525efd70136e5209fda6c6469f
         public async Task<bool> Actualizar(Rol modelo)
         {
             _dbcontext.Rols.Update(modelo);
@@ -49,7 +63,11 @@ namespace API_Services.DAL.Repository
             return queryRolSQL;
         }
 
+<<<<<<< HEAD
         public async Task<Rol> Obtnener(int id)
+=======
+        public async Task<Rol> Obtener(int id) // Corregido el nombre del método
+>>>>>>> ce1e7770fd9080525efd70136e5209fda6c6469f
         {
             return await _dbcontext.Rols.FindAsync(id);
         }

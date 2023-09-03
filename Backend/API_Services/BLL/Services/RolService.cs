@@ -14,8 +14,13 @@ namespace API_Services.BLL.Services
     
     public class RolService : IRolService
     {
+<<<<<<< HEAD
         private readonly IGenericRpository<Rol> _RolRepo;
         public RolService(IGenericRpository<Rol> RolRepo)
+=======
+        private readonly IGenericRepository<Rol> _RolRepo;
+        public RolService(IGenericRepository<Rol> RolRepo)
+>>>>>>> ce1e7770fd9080525efd70136e5209fda6c6469f
         {
             _RolRepo = RolRepo;   
         }
