@@ -1,6 +1,7 @@
 .perfil-hero{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 40px;
     min-height: 80vh;
     margin: 50px;
@@ -16,6 +17,7 @@
 
 .experiencia-clientes{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }
@@ -47,4 +49,22 @@
 
 .flechas i:hover{
     transform: scale(1.1);
+}
+
+@media (max-width: 767px){
+    .perfil-hero{
+        padding: 20px;
+    }
+    .card-cliente{
+        width: 90%;
+    }
+    .card-cliente img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .perfil-hero{
+        margin: 20px 5px;
+    }
 }
