@@ -1,0 +1,92 @@
+.perfil-main{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin: 50px;
+}
+
+.perfil-info{
+    display: flex;
+    gap: 40px;
+}
+
+.perfil-info img{
+    width: 350px;
+    height: 350px;
+}
+
+.perfil-info .info-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.perfil-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    min-height: 80vh;
+    padding: 50px;
+    border: 2px solid #179CB96B;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.7) url('../../images/profile-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: color;
+}
+
+.experiencia-trabajadores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card-trabajador{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+}
+
+.card-trabajador img{
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.flechas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flechas i{
+    cursor: pointer;
+    color: #179CB9CC;
+    transition: .4s;
+}
+
+.flechas i:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px){
+    .perfil-hero{
+        padding: 20px;
+    }
+    .card-trabajador{
+        width: 90%;
+    }
+    .card-trabajador img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    .perfil-hero{
+        margin: 20px 5px;
+    }
+}
