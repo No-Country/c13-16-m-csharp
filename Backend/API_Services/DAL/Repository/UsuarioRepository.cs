@@ -5,14 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using API_Services.DAL;
 using API_Services.DAL.DataContext;
-using API_Services.DAL.Repository;
 using API_Services.Models;
 
 namespace API_Services.DAL.Repository
 {
-    public class UsuarioRepository : IGenericRpository<Usuario>
+    
+    public class UsuarioRepository : IGenericRepository<Usuario>
     {
         private readonly AppserviceContext _dbcontext;
+
         public UsuarioRepository(AppserviceContext dbcontext)
         {
             _dbcontext = dbcontext;
@@ -26,22 +27,29 @@ namespace API_Services.DAL.Repository
 
         public async Task<bool> Eliminar(int id)
         {
-            throw new NotImplementedException();
+            Usuario modelo = _dbcontext.Usuarios.First(c => c.IdUsuarios == id);
+            _dbcontext.Usuarios.Remove(modelo);
+            await _dbcontext.SaveChangesAsync();
+            return true;
         }
 
         public async Task<bool> Insertar(Usuario modelo)
         {
-            throw new NotImplementedException();
+            _dbcontext.Usuarios.Add(modelo);
+            await _dbcontext.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<Usuario> Obtener(int id)
+        {
+            return await _dbcontext.Usuarios.FindAsync(id);
         }
 
         public async Task<IQueryable<Usuario>> ObtenerTodos()
         {
-            throw new NotImplementedException();
-        }
-
-        public async Task<Usuario> Obtnener(int id)
-        {
-            throw new NotImplementedException();
+            IQueryable<Usuario> queryUsuarioSQL = _dbcontext.Usuarios;
+            return queryUsuarioSQL
+                ;
         }
     }
 }
