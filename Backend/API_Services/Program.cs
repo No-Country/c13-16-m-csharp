@@ -29,10 +29,7 @@ builder.Services.AddScoped<IDatosBasicoService, DatosBasicoService>();
 //Usuarios
 builder.Services.AddScoped<IGenericRepository<DatosBasico>, DatosBasicoRepository>();
 builder.Services.AddScoped<IDatosBasicoService, DatosBasicoService>();
-
-
-
-
+//
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -49,3 +46,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
+
+
