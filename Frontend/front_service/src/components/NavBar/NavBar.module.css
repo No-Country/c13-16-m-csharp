@@ -34,6 +34,11 @@
   gap: 20px;
 }
 
+.links a{
+  text-decoration: none;
+  color: white;
+}
+
 .button {
   color:#179CB96B;
   font-size: 16px;
