@@ -1,0 +1,74 @@
+.border {
+  padding-block: 50px;
+  padding-inline: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.all {
+  display: flex;
+  justify-content: center;
+  background-image: url('../../assets/LoginImage.webp');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 50px;
+  border: 2px solid #179CB94D;
+  padding: 20px 40px 50px 40px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.all div {
+  margin-inline: 5px;
+}
+
+.all div div {
+  width: 580px;
+  height: 580px;
+  border-radius: 40px;
+  border: 4px solid #179CB94D;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 24px;
+  margin-block: 20px;
+  padding: 120px 100px 0px 100px;
+}
+
+.all h1 {
+  font-size: 76px;
+  font-weight: 400;
+  font-family: "EB Garamond";
+}
+
+.all h2 {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "EB Garamond";
+}
+
+.all p {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.header {
+  border: 0px !important;
+  background-color: transparent !important;
+  padding: 0px 0px 0px 0px !important;
+}
+
+.image {
+  padding: 120px 100px 120px 100px !important;
+}
+
+.image img {
+  width: 443px;
+  height: 443px;
+  border-radius: 40px;
+  border: 4px solid #179CB94D;
+}
+
