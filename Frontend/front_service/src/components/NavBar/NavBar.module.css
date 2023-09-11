@@ -48,3 +48,12 @@
   border-radius: 10px;
   border: 0px;
 }
+
+.menu{
+  transition: .4s;
+}
+
+.menu:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
