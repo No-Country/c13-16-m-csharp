@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Tecno\Desktop\Proyecto Nocode\prueba global</_PublishTargetUrl>
+    <History>True|2023-09-11T15:31:26.6202627Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Cadena_SQL">
+      <Value>Data Source=TECNODEX%3bDatabase=APPSERVICE%3bEncrypt=True%3bIntegrated Security=true%3bTrustServerCertificate=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

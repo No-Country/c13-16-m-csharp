@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "API_Services/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.10",
           "Swashbuckle.AspNetCore": "6.2.3"

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using API_Services.DAL.DataContext;
 using API_Services.DAL.Repository;
@@ -29,15 +30,35 @@ builder.Services.AddScoped<IDatosBasicoService, DatosBasicoService>();
 //Usuarios
 builder.Services.AddScoped<IGenericRepository<DatosBasico>, DatosBasicoRepository>();
 builder.Services.AddScoped<IDatosBasicoService, DatosBasicoService>();
+//proveedor
+builder.Services.AddScoped<IGenericRepository<Proveedore>, ProveedoreRepository>();
+builder.Services.AddScoped<IProveedoreService, ProveedoreService>();
+//Historial Cliente
+builder.Services.AddScoped<IGenericRepository<HistorialCliente>, HistorialClienteRepository>();
+builder.Services.AddScoped<IHistorialClienteService, HistorialClienteService>();
+// Historia Proveedor
+builder.Services.AddScoped<IGenericRepository<HistorialProveedore>, HistorialProveedoreRepository>();
+builder.Services.AddScoped<IHistorialProveedoreService, HistorialProveedoreService>();
+//pedido
+builder.Services.AddScoped<IGenericRepository<Pedido>, PedidoRepository>();
+builder.Services.AddScoped<IPedidoService, PedidoService>();
+//pedido Detalle
+builder.Services.AddScoped<IGenericRepository<PedidoDetalle>, PedidoDetalleRepository>();
+builder.Services.AddScoped<IPedidoDetalleService, PedidoDetalleService>();
 //
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+/*if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+}*/
+
+app.UseSwagger();
+app.UseSwaggerUI();
+
+
 
 app.UseHttpsRedirection();
 
